@@ -9,7 +9,7 @@ let string = `/* 你好，我是小徐
     width: 200px;
     height: 200px;
 }
-/* 接下来把 div 变成八卦图
+/* 接下来把 div 变成太极图
  * 注意看好了
  * 首先把 div 变成一个圆
  **/
@@ -18,13 +18,13 @@ let string = `/* 你好，我是小徐
     box-shadow: 0 0 3px rgba(0,0,0,.3);
     border:none;
 }
-/* 八卦是阴阳形成的 
+/* 太极是阴阳形成的 
  * 一黑一白
 **/
 #div1{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
-/* 加两个神秘的小球 */
+/* 先加一个黑色的小球 */
 #div1::before{
     width: 100px;
     height: 100px;
@@ -35,6 +35,7 @@ let string = `/* 你好，我是小徐
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
+/* 再加一个白色的小球 */
 #div1::after{
     width: 100px;
     height: 100px;
